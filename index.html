@@ -4,82 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <title>Aarti Contractor</title>
   </head>
   <body>
-    
     <nav>
       <div class="nav">
-      <h1>Welcome to my portfolio!</h1>
-    
-      <div>
-        <ul>
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-          
-          <li>
-            <a href="#">Work</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <li>
-            <a href="#">Resume</a>
-          </li>
-        </ul>
+        <h1>Welcome to my portfolio!</h1>
+        <div>
+          <ul>
+            <li>
+              <a href="#">About Me</a>
+            </li>
+            <li>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#">Resume</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-</nav>
-
-<header id="home" class="header">
-    <div class="overlay"></div>
-    <div class="header-content container">
+    </nav>
+    <header id="home" class="header">
+      <div class="overlay"></div>
+      <div class="header-content container">
         <h1 class="header-title">
-            <span class="up">HI!</span>
-            <span class="down">I am Aarti Contractor</span>
+          <span class="up">HI!</span>
+          <span class="down">I am Aarti Contractor</span>
         </h1>
         <br>
-        <p class="header-subtitle">UC Berkeley Bootcamp Student</p>            
-    </div>              
-</header>
-
-
-<main>
-<div class="products" id="about-me">
-  <section class="card">
-    <header>Work</header>
-    <p>Please feel free to check out my work</p>
-    <p>
-      .column { <br>
-          display: flex; <br>
-          flex-direction:column <br>
-          }
-    </p>
-    
-  </section>
-  <section class="card">
-    <header>Contact</header>
-    <p>Build a 12-column layout using CSS Grid</p>
-    <p>
-      .grid { <br>
-          display: grid; <br>
-          width: 100%; <br>
-          grid-template-columns; <br>
-          repeat (12, 1fr); <br>
-          }
-    </p> 
-  </section>
-</div>
-</main>
-
-<!-- Footer -->
-<footer>
-<h2>
-  <p>Copyright &copy; 2023 Aarti Contractor</p> 
-</h2>
-</footer>
-
-</body>
+        <p class="header-subtitle">UC Berkeley Bootcamp Student</p>
+      </div>
+    </header>
+    <main>
+      <div class="products" id="about-me">
+        <section class="card">
+          <header class="github-text">
+            <i class="fab fa-github fa-2x"></i> GitHub
+          </header>
+          <p>Please feel free to check out my work</p>
+          <p> .column { <br> display: flex; <br> flex-direction:column <br> } </p>
+        </section>
+        <section class="card" id="work">
+          <header>Contact</header>
+          <p>Build a 12-column layout using CSS Grid</p>
+          <p> .grid { <br> display: grid; <br> width: 100%; <br> grid-template-columns; <br> repeat (12, 1fr); <br> } </p>
+        </section>
+      </div>
+      <br>
+      <br>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>Copyright &copy; 2023 Aarti Contractor</p>
+      </h2>
+    </footer>
+  </body>
 </html>
