@@ -1,8 +1,11 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
+
 body {
-    background-color: #454643;
+    background-color: rgb(56, 56, 83);
 }
 
 .nav {
@@ -12,6 +15,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: black;
     color: #ffffff;
+    flex-direction: column;
 }
 
 .nav h1 {
@@ -82,7 +86,7 @@ a {
 .header .header-content .header-title .up {
     font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
     font-weight: 500;
-    color: #444;
+    color: rgb(56, 56, 83);
     margin-bottom: 5px;
     position: relative;
     display: block;
@@ -103,6 +107,79 @@ a {
     margin-bottom: 20px;
 }
 
+.footer {
+    padding: 5px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: pink;   
+}
+
+
+
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: white;
+    padding: 10px;
+    flex: 0 0 400px;
+    margin-block: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-image: linear-gradient(
+        (rgba(160, 132, 238, 0.3) 0%,
+        (rgba(160, 132, 238, 0.6) 100%))
+
+    );
+    display: block;
+    flex-direction: column;
+    
+  }
+  .card header {
+    padding: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    
+  }
+  
+  .card p {
+    text-align: center;
+    border-style: 10px solid white;
+    color: pink
+    
+  }
+  
+  .card p + p {
+    width: 100%;
+    color: white;
+    font-family: monospace;
+    background-color: rgb(56, 56, 83);
+    border-radius: 5px;
+    
+        padding: 120px;
+    text-align: left;
+  }
+
+  .card:hover {
+    transform: scale(1.2);
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+ 
+  }
+  .products {
+    flex: 4;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
 
 
@@ -111,6 +188,179 @@ a {
 
 
 
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+}
+
+.nav h1 {
+    display: flex;
+    font-size: 25px;
+}
+.nav div {
+    padding-top: 5px;
+    margin-right: 25px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display: flex;
+    
+}
+.header {
+    flex-wrap: wrap;
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url(./images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+  
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+  
+.header .header-content {
+    margin-top: 0px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 550px;
+}
+  
+.header .header-content .header-title .up {
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+}
+  
+.header .header-content .header-title .down {
+    font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+}
+  
+.header .header-content .header-subtitle {
+    font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
+    opacity: .8;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
+.footer {
+    padding: 10px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: pink;
+}
+
+
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: white;
+    padding: 10px;
+    flex: 0 0 400px;
+    margin-block: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: linear-gradient(
+        (rgba(160, 132, 238, 0.3) 0%,
+        (rgba(160, 132, 238, 0.6) 100%))
+    );
+    
+  }
+
+
+  .card header {
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: white;
+    
+  }
+  
+  .card p {
+    text-align: center;
+    border-style: 10px solid white;
+    color: pink
+    
+  }
+  
+  .card p + p {
+    width: 100%;
+    color: white;
+    font-family: monospace;
+    background-color: black;
+    border-radius: 5px;
+    
+        padding: 20px;
+    text-align: left;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .products {
+    flex: 4;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+}
 
 
 
