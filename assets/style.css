@@ -438,3 +438,33 @@ main {
     margin: 0;
     font-size: 24px;
 }
+
+.contact-me {
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+}
+.contact-me ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me li {
+    margin-bottom: 0.5em;
+}
+.contact-me a {
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.contact-me a:hover {
+    color: #555;
+}
+.contact-me i {
+    font-size: 1.2em;
+    margin-right: 0.5em;
+}
