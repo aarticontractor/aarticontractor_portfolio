@@ -57,7 +57,7 @@ a {
 .header .header-content .header-title .up {
     font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
     font-weight: 500;
-    color: rgb(56, 56, 83);
+    color: rgb(41, 41, 68);
     margin-bottom: 5px;
     position: relative;
     display: block;
@@ -137,6 +137,7 @@ main {
 #resume {
     padding: 7em 0;
     clear: both;
+    height: 1600px;
 }
 .resume-heading {
     margin-bottom: 5em;
@@ -326,7 +327,7 @@ main {
     font-size: 24px;
 }
 .contact-me {
-    padding: 2em;
+    padding: 3em;
     border-radius: 10px;
     text-align: center;
 }
@@ -338,13 +339,13 @@ main {
     justify-content: space-between;
 }
 .contact-me li {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 .contact-me a {
     display: inline-flex;
     align-items: center;
     color: #000;
-    text-decoration: none;
+    text-decoration:underline;
     font-size: 1.2em;
 }
 .contact-me a:hover {
@@ -368,6 +369,17 @@ footer {
     box-sizing: border-box;
     z-index: 999;
 }
+
+.about-me {
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+    opacity: .8;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+
 
 
 /* All media query for screen size lower than 650px */
