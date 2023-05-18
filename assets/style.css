@@ -81,13 +81,14 @@ a {
     border-radius: 10px;
     border-color: white;
     padding: 10px;
-    flex: 0.3 1 750px;
+    flex: 0.3 1 50px;
     margin-block: 80px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-image: linear-gradient( (rgba(160, 132, 238, 0.3) 0%, (rgba(160, 132, 238, 0.6) 100%)) );
     display: block;
     flex-direction: column;
+   
 }
 .card header {
     padding: 20px;
@@ -101,8 +102,13 @@ a {
     border-style: 10px solid white;
     color: pink;
 }
+
+.col-md-6 .project {
+color: wheat;
+}
+
 .card i {
-    text-align: ce;
+    text-align: center;
 }
 .card p + p {
     width: 100%;
@@ -114,7 +120,7 @@ a {
     text-align: left;
 }
 .card:hover {
-    transform: scale(1.2);
+    transform: scale(0.7);
 }
 main {
     display: flex;
@@ -122,7 +128,7 @@ main {
     flex-direction: column;
 }
 .products {
-    flex: 4;
+    flex: 2;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
